@@ -59,3 +59,31 @@ Use gsub function for pattern replacement to clean up the data labels.
 ## Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. ##
 
 Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject.
+
+## Identifiers ##
+The following variables were created and used in the R script run_analysis.R : 
+
+* url - to store the url of the file to be downloaded
+* path_ref - to store the path of the unzipped folder containg the data set
+* files - stores the list of the files in the UCI HAR Dataset
+* dataActivityTest - stores data of Y_test.txt
+* dataActivityTrain - stores data of Y_train.txt
+* dataSubjectTest - stores data of Subject_test.txt
+* dataSubjectTrain - stores data of Subject_train.txt
+* dataFeaturesTest - stores data of X_test.txt
+* dataFeaturesTrain - stores data of X_train.txt
+* dataSubject - it rbinds() the dataSubjectTest and dataSunjectTrain
+* dataActivity - it rbinds() the dataActivityTest and dataActivitryTrain
+* dataFeatures - it rbinds() the dataFeaturesTest and dataFeatureTrain
+* dataCombine - it's the temporary variable
+* Data - the whole BIG data set as per the requirements specified
+* Data2 - the data ser as per the requirements specified
+
+## Activity Labels ##
+
+* WALKING (value 1): subject was walking during the test
+* WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+* WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+* SITTING (value 4): subject was sitting during the test
+* STANDING (value 5): subject was standing during the test
+* LAYING (value 6): subject was laying down during the test
